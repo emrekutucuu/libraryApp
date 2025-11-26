@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+            <div>
+                <h3>Library</h3>
+            </div>
+            <div class="search-div">
+                <input type="string" id="search-input" placeholder="search">
+            </div>
+        </nav>
+
+    </header>
+
+    <article>
+
+        <div class="items-div">
+
+            <div id="outBook">
+
+            </div>
+
+            <div id="outMg">
+
+            </div>
+
+        </div>
+        
+    </article>
+    
+    <footer>
+        <div id="formDiv">
+
+            <select id="formSelect">
+                <option value="book" selected>Book</option>
+                <option value="magazine">Magazine</option>
+            </select>
+
+            <form id="addBook">
+
+                <input id="bookName" type="string" placeholder="Book Name" required>
+                <input id="bookPage" type="number" placeholder="Book Page" required>
+                <input id="bookYear" type="number" placeholder="Book Year" required>
+                <input id="bookWriter" type="string" placeholder="Book Writer" required>
+                <button id="formBookAdd">Add</button>
+
+            </form>
+
+            <form id="addMagazine">
+
+                <input id="mgName" type="string" placeholder="Magazine Name" required>
+                <input id="mgPage" type="number" placeholder="Magazine Page" required>
+                <input id="mgYear" type="number" placeholder="Magazine Year" required>
+                <input id="mgOrganizator" type="string" placeholder="Magazine Organizator" required>
+                <button id="formMagazineAdd">Add</button>
+
+            </form>
+
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

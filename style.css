@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(to bottom right, #845fff, #f77bfe);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+}
+
+article{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    bottom: 100px;
+}
+
+.items-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    min-height: clac(10vh - 100px);
+}
+
+#outBook, #outMg {
+    width: 500px;
+    min-height: 450px;
+    max-height: 450px;
+    padding: 20px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#formDiv {
+    display: flex;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px 0;
+    bottom: 0;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+#addBook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#addMagazine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.book-item, .magazine-item {
+    position: relative;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.delete-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 4px 6px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: none;
+}
+
+.edit-btn{
+    position: absolute;
+    top: 5px;
+    padding: 4px 6px;
+    cursor: pointer;
+    right: 45px;
+    background: none;
+    border: none;
+    display: none;
+}
+
+.book-item:hover .delete-btn,
+.magazine-item:hover .delete-btn {
+    display: block;
+}
+.book-item:hover .edit-btn,
+.magazine-item:hover .edit-btn {
+    display: block;
+}
