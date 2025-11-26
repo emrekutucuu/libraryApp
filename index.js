@@ -119,7 +119,7 @@ function renderBook(bookRender = bookAll) {
         bookDiv.classList.add("book-item");
 
         bookDiv.innerHTML = `
-        <div style=" display: flex; ">
+        <div style="display: flex;">
             <button class="edit-btn" onclick="editBook(${actualIndex})">
                 Edit
             </button>
@@ -147,19 +147,19 @@ function renderMagazine(mgRender = mgAll) {
 
   mgRender.forEach((mg, index) => {
     const actualIndex = mgAll.indexOf(mg);
-    
+
     if(actualIndex === -1) return;
 
     const mgDiv = document.createElement("div");
     mgDiv.classList.add("magazine-item");
     
     mgDiv.innerHTML = `
-                <div class="div">
+                <div style="display: flex;">
                     <button class="edit-btn" onclick="editMagazine(${actualIndex})">
                         Edit
                     </button>
                     <button class="delete-btn" data-index="${actualIndex}" onclick= "deleteMagazine(${index})">
-                        Delete
+                        X
                     </button>
                 </div>
                 <strong>Magazine name: ${mg.name}</strong>
